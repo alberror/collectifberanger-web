@@ -14,7 +14,6 @@ a:hover {
 }
 
 .App-logo {
-  height: 3rem;
   pointer-events: none;
   position: absolute;
   top: 1.9rem;
@@ -22,7 +21,6 @@ a:hover {
 }
 
 .App-logo-txt {
-  height: 8rem;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -71,7 +69,6 @@ main {
   min-height: calc(100vh - 120px);
   margin: 0 auto;
   text-align: left;
-  width: 60%;
 }
 
 h1 {
@@ -156,12 +153,6 @@ svg {
   border-radius: 0.2rem;
   display: grid;
   grid-gap: 1rem;
-  grid-template-areas:
-    "logo-inv logo-inv none antoine"
-    "none2 alexandre catarina severine"
-    "laure camille nathalie aurelie"
-    "alyse stephanie sophie gaelle"
-    "marie none3 victor none4";
   padding: 1rem;
 }
 
@@ -179,7 +170,7 @@ svg {
 }
 
 .people p {
-  bottom: 0.6rem;
+  margin: 0;
   position: absolute;
   text-decoration: underline;
 }
@@ -249,21 +240,10 @@ svg {
   width: 100%;
 }
 
-.contact-page {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  min-height: calc(100vh - 120px);
-  width: 60%;
-}
-
 form {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
-  width: 100%;
+  margin: 2rem auto 0 auto;
 }
 
 form > *:not(:first-child) {
@@ -301,7 +281,6 @@ button {
   font-size: 1.6rem;
   margin: 0 auto;
   padding: 0.5rem 1rem;
-  width: 30%;
 }
 
 button:hover {
@@ -321,4 +300,71 @@ button:hover {
 
 .error {
   background-color: red;
+}
+
+@media (max-width: 768px) {
+  .App-logo {
+    height: 2rem;
+  }
+
+  .App-logo-txt {
+    height: 7rem;
+  }
+
+  main {
+    width: 80%;
+  }
+
+  .masonry {
+    grid-template-areas:
+      "logo-inv logo-inv"
+      "antoine alexandre"
+      "catarina severine"
+      "laure camille"
+      "nathalie aurelie"
+      "alyse stephanie"
+      "sophie gaelle"
+      "marie victor";
+  }
+
+  .people p {
+    bottom: 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .App-logo {
+    height: 3rem;
+  }
+
+  .App-logo-txt {
+    height: 8rem;
+  }
+
+  main {
+    width: 60%;
+  }
+
+  .masonry {
+    grid-template-areas:
+      "logo-inv logo-inv none antoine"
+      "none2 alexandre catarina severine"
+      "laure camille nathalie aurelie"
+      "alyse stephanie sophie gaelle"
+      "marie none3 victor none4";
+  }
+
+  .people p {
+    bottom: 0.4rem;
+    font-size: 1rem;
+  }
+
+  form {
+    width: 60%;
+  }
+
+  button {
+    width: 30%;
+  }
 }
