@@ -316,6 +316,7 @@ button:hover {
 
   .App-logo-txt {
     height: 7rem;
+    transform: rotage(90deg);
   }
 
   nav ul {
@@ -328,7 +329,7 @@ button:hover {
   }
 
   main {
-    width: 80%;
+    width: 90%;
   }
 
   .masonry {
