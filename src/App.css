@@ -311,7 +311,7 @@ button:hover {
 
 @media (max-width: 760px) {
   .App-logo {
-    height: 2rem;
+    display: none;
   }
 
   .App-logo-txt {
