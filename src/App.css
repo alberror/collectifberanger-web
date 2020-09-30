@@ -1,31 +1,61 @@
 .App {
-  text-align: center;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+a {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cacaca;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 3rem;
   pointer-events: none;
+  position: absolute;
+  top: 1.9rem;
+  z-index: 2;
+}
+
+.App-logo-txt {
+  height: 8rem;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #fff;
+  height: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 1rem;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul > li:not(:first-child) {
+  margin-left: 10px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +65,260 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  min-height: calc(100vh - 120px);
+  margin: 0 auto;
+  text-align: left;
+  width: 60%;
+}
+
+h1 {
+  border-bottom: 1px solid black;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.quote {
+  border-left: 6px solid #cacaca;
+  font-size: 2rem;
+  font-style: italic;
+  padding-left: 1rem;
+}
+
+.arguments-line {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .arguments-line {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.argument-card {
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.6rem;
+}
+
+.argument-card h3 {
+  align-items: center;
+  background-color: #ff9a83;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  display: flex;
+  font-weight: 100;
+  justify-content: space-between;
+  margin: 0 !important;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.argument-card h3.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.arg-content {
+  background-color: #ff9a83;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  font-weight: 100;
+  padding: 0.5rem;
+}
+
+svg {
+  color: black;
+  height: 24px;
+  width: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+.masonry {
+  background-color: #ff9a83;
+  border-radius: 0.2rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "logo-inv logo-inv none antoine"
+    "none2 alexandre catarina severine"
+    "laure camille nathalie aurelie"
+    "alyse stephanie sophie gaelle"
+    "marie none3 victor none4";
+  padding: 1rem;
+}
+
+.people {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+
+.people img {
+  width: 100%;
+}
+
+.people p {
+  bottom: 0.6rem;
+  position: absolute;
+  text-decoration: underline;
+}
+
+.camille {
+  grid-area: camille;
+}
+
+.antoine {
+  grid-area: antoine;
+}
+
+.alexandre {
+  grid-area: alexandre;
+}
+
+.catarina {
+  grid-area: catarina;
+}
+
+.severine {
+  grid-area: severine;
+}
+
+.laure {
+  grid-area: laure;
+}
+
+.nathalie {
+  grid-area: nathalie;
+}
+
+.aurelie {
+  grid-area: aurelie;
+}
+
+.alyse {
+  grid-area: alyse;
+}
+
+.stephanie {
+  grid-area: stephanie;
+}
+
+.sophie {
+  grid-area: sophie;
+}
+
+.gaelle {
+  grid-area: gaelle;
+}
+
+.marie {
+  grid-area: marie;
+}
+
+.victor {
+  grid-area: victor;
+}
+
+.none {
+  grid-area: none;
+}
+
+.logo-inv {
+  grid-area: logo-inv;
+  width: 100%;
+}
+
+.contact-page {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: calc(100vh - 120px);
+  width: 60%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+form > *:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+input[name="email"] {
+  height: 2rem;
+}
+
+textarea[name="message"] {
+  height: 6rem;
+}
+
+button {
+  background-color: #ff9a83;
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  width: 30%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.notice,
+.error {
+  border-radius: 0.2rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+.notice {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
 }
