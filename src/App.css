@@ -309,13 +309,22 @@ button:hover {
   background-color: red;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .App-logo {
     height: 2rem;
   }
 
   .App-logo-txt {
     height: 7rem;
+  }
+
+  nav ul {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  nav ul > li:not(:first-child) {
+    margin-left: 0;
   }
 
   main {
@@ -335,12 +344,13 @@ button:hover {
   }
 
   .people p {
-    bottom: 0.4rem;
+    bottom: 0.2rem;
     font-size: 0.8rem;
+    width: 60%;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   .App-logo {
     height: 4rem;
   }
@@ -350,7 +360,7 @@ button:hover {
   }
 
   main {
-    width: 60%;
+    width: 80%;
   }
 
   .masonry {
@@ -363,8 +373,8 @@ button:hover {
   }
 
   .people p {
-    bottom: 0.4rem;
-    font-size: 1rem;
+    bottom: 0.2rem;
+    font-size: 0.8rem;
   }
 
   form {
@@ -373,5 +383,12 @@ button:hover {
 
   button {
     width: 30%;
+  }
+}
+
+@media (min-width: 960px) {
+  .people p {
+    bottom: 1rem;
+    font-size: 1rem;
   }
 }

@@ -48,7 +48,7 @@ export const listPoints = [
 export const pictures = [
   {
     src: "/images/1.JPG",
-    name: "Camille d'Ornano",
+    name: "Camille Vassilopoulos",
     className: "camille",
   },
   {
