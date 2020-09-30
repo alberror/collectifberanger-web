@@ -35,7 +35,7 @@ export const listPoints = [
   },
   {
     id: "equality",
-    title: "Harcèlement & Égalité Fille Garçon",
+    title: "Harcèlement - Égalité Fille Garçon",
     content:
       "La prévention du harcèlement et la déconstruction des stéréotypes de genres se mènent dès l’école élémentaire. Respecter l’autre dans ses choix et valeurs :",
     list: [

@@ -6,8 +6,7 @@ export const Contact = () => (
     <h1>Contactez-nous</h1>
     <p>
       Des questions, des suggestions, contactez-nous ! Vous pouvez nous écrire
-      directement à parents (at) collectberanger.paris ou directement via le
-      formulaire ci-dessous.
+      directement via le formulaire ci-dessous.
     </p>
     <ContactForm />
   </div>

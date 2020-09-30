@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export const MainText = () => (
   <div>
@@ -18,7 +19,7 @@ export const MainText = () => (
     </p>
 
     <div className="quote">
-      « Il faut tout un village pour élever un enfant »
+      « Il faut tout un village pour élever un enfant. »
     </div>
 
     <p>
@@ -29,8 +30,7 @@ export const MainText = () => (
     </p>
 
     <p>
-      Des questions, des suggestions, contactez-nous :
-      parents@collectifberanger.paris
+      Des questions, des suggestions, <a href="/contact">contactez-nous</a>.
     </p>
   </div>
 );

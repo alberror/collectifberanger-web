@@ -56,6 +56,14 @@ nav ul > li:not(:first-child) {
   margin-left: 10px;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+p a {
+  font-weight: 700;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -84,9 +92,8 @@ h1 {
 }
 
 .quote {
-  border-left: 6px solid #cacaca;
-  font-size: 2rem;
-  font-style: italic;
+  border-left: 6px solid #ff9a83;
+  color: #ff9a83;
   padding-left: 1rem;
 }
 
@@ -317,7 +324,7 @@ button:hover {
 
   .masonry {
     grid-template-areas:
-      "logo-inv logo-inv"
+      "logo-inv none"
       "antoine alexandre"
       "catarina severine"
       "laure camille"
@@ -335,11 +342,11 @@ button:hover {
 
 @media (min-width: 768px) {
   .App-logo {
-    height: 3rem;
+    height: 4rem;
   }
 
   .App-logo-txt {
-    height: 8rem;
+    height: 10rem;
   }
 
   main {
@@ -348,7 +355,7 @@ button:hover {
 
   .masonry {
     grid-template-areas:
-      "logo-inv logo-inv none antoine"
+      "logo-inv none none antoine"
       "none2 alexandre catarina severine"
       "laure camille nathalie aurelie"
       "alyse stephanie sophie gaelle"
