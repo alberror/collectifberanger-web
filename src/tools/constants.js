@@ -17,25 +17,25 @@ export const listPoints = [
     content:
       "C’est un langage et une culture supplémentaire pour nos enfants, ils doivent y avoir accès régulièrement dès l’élémentaire. Un possible reconfinement, et la pandémie qui se poursuit, incitent, plus qu’auparavant à être attentifs au passage au numérique :",
     list: [
-      "accès au numérique pour toutes les classNamees",
+      "accès au numérique pour toutes les classes",
       "diffusion de l’outil dans la communication de l’école",
       "discussions pour utiliser au mieux les outils informatiques dans le cas où la présence physique ne peut être assurée",
     ],
   },
   {
     id: "ecology",
-    title: "Environnement",
+    title: "Environnement / Santé",
     content:
       "Pour que nos enfants grandissent dans un cadre plus respectueux des enjeux environnementaux :",
     list: [
       "restauration scolaire de qualité et diversifiée",
-      "cours oasis, sécurisation des abords de l’école",
+      "cours oasis, piétonnisation des abords de l’école",
       "actions éco-citoyennes",
     ],
   },
   {
     id: "equality",
-    title: "Harcèlement - Égalité Fille Garçon",
+    title: "Harcèlement / Égalité Fille Garçon",
     content:
       "La prévention du harcèlement et la déconstruction des stéréotypes de genres se mènent dès l’école élémentaire. Respecter l’autre dans ses choix et valeurs :",
     list: [
