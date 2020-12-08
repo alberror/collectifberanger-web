@@ -5,7 +5,6 @@ import { listPoints } from "../tools/constants";
 
 export const Home = () => (
   <div className="home-page">
-    <h1>Votez collectif</h1>
     <MainText />
     <div className="arguments-line">
       {listPoints.map((arg, i) => (
