@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export const MainText = () => (
-  <div>
+  <div className="mt-10">
     <p>
       Nous sommes des parents d’enfants scolarisés à l’école élémentaire
       Béranger, candidats pour vous représenter. Nous défendons deux principes :

@@ -155,6 +155,10 @@ svg {
   display: none;
 }
 
+.mt-10 {
+  margin-top: 2rem;
+}
+
 .masonry {
   background-color: #ff9a83;
   border-radius: 0.2rem;
